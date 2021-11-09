@@ -1,0 +1,13 @@
+
+
+<ul>
+  <% @politicians.each do |politician| %>
+    <li><%= link_to politician.name, politician_path(politician) %></li>
+    <li><%= link_to politician.bio, politician_path(politician) %></li>
+  <% end %>
+</ul>
+
+
+  <% @politicians.each do |politician| %>
+  <p> number of stars : <%= politician.moyenne%> </p>
+  <%end%>
