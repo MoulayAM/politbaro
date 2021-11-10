@@ -42,3 +42,4 @@ opinion_5 = Opinion.create!(politician: politician_1, theme: theme_1,content: "A
 
 
 news_1 = News.create!(title: "ioajidjaifjaifjaeiojfioajfiofjeizfcjioj", politician: politician_2)
+news_1 = News.create!(title:)
