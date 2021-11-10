@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2021_11_09_132345) do
 
   create_table "politicians", force: :cascade do |t|
     t.string "name"
+    t.string "img_url"
     t.text "bio"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
