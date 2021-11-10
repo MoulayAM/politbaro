@@ -1,0 +1,14 @@
+
+
+<body class="noir">
+<div class="container">
+<% @opinions.each do |opinion| %>
+<div class="card-product">
+  <h2><%= opinion.theme.title %> </h2>
+  <div class="card-product-infos">
+    <p><%= link_to opinion.content, opinion.opinion_url %></p>
+  </div>
+</div>
+<% end %>
+</div>
+</body>
