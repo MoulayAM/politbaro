@@ -1,5 +1,4 @@
 
-
 <ul>
   <% @politicians.each do |politician| %>
     <li><%= link_to politician.name, politician_path(politician) %></li>
@@ -7,7 +6,20 @@
   <% end %>
 </ul>
 
+<% @politicians.each do |politician| %>
+<p> number of stars : <%= politician.moyenne%> </p>
+<%end%>
 
-  <% @politicians.each do |politician| %>
-  <p> number of stars : <%= politician.moyenne%> </p>
-  <%end%>
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+   ....
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+    ....
+  </div>
+</div>
