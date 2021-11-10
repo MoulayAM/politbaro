@@ -1,0 +1,17 @@
+
+<div class = "container-image">
+   <%= @politician.img_url %>
+</div>
+
+<div class = "container-news">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-6">
+    <h1>Derniere nouvelles : <%= @politician.name %></h1>
+    <ul>
+    <% @news.each do |news| %>
+        <li><%= news.title %></li>
+    <% end %>
+    </ul>
+    </div>
+  </div>  
+</div>

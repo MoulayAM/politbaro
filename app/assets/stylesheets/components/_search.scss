@@ -1,0 +1,29 @@
+
+.search-container {
+
+    .form-control {
+        width: 30%;
+        font-family: 'Red Hat Display';
+        margin: 70px 10px 10px -12px;
+        font-style: Regular;
+        font-size: 18px;
+        background-color:black;
+
+
+    }
+
+    .btn-primary {
+            color: white;
+            border: 5px solid black;
+            padding: 8px 24px;
+            border-radius: 50px;
+            margin: 10px 10px 10px -15px;
+            background: #FD6262;
+            transition: opacity 0.3s ease;
+            font-family: 'Red Hat Display';
+    }
+
+          :hover {
+            opacity: 1;
+          }
+}
