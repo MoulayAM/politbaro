@@ -1,0 +1,12 @@
+
+
+<body class="noir">
+<% @opinions.each do |opinion| %>
+<div class="card-product">
+  <h2><%= opinion.theme.title %> </h2>
+  <div class="card-product-infos">
+    <p><%= opinion.content %></p>
+  </div>
+</div>
+<% end %>
+</body>
