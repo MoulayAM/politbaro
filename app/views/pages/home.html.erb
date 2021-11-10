@@ -1,2 +1,44 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<head>
+ <link href='https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body class="dark">
+
+
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));">
+    <div class="container">
+        <h1> Leveraging <strong>data</strong> to hold politicians accountable </h1>
+        <p>Explore politicians news and opinions, and make your voice heard!</p>
+
+          <div class="container">
+            <div class="wrapper">
+              <div class="search-container">
+                    <%= form_tag politicians_path, method: :get do %>
+                      <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Enter a politician's name..." %>
+                      <%= submit_tag "Search", class: "btn btn-primary" %>
+                    <% end %>
+              </div>
+            </div>
+          </div>
+
+        <p>Popular politicians 🔥🔥</p>
+    </div>
+  </div>
+
+
+
+</body>
+
+
+  <div class="cards">
+
+    <div class="card-category-small">
+      POLITICIAN
+    </div>
+
+    <div class="card-category-big">
+      Short desc.
+    </div>
+
+  </div>
