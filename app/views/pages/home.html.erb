@@ -27,18 +27,20 @@
   </div>
 
 
-
 </body>
 
+<div class=“category-cards”>
 
-  <div class="cards">
+  <% @popular_politicians.each do |politician|  %>
 
-    <div class="card-category-small">
-      POLITICIAN
+    <div class="category-card">
+      <div class="left-category-card">
+      <img src="<%= politician.img_url %>"/>
+      </div>
+
+      <div class="right-category-card">
+        <%= politician.bio.truncate(150).capitalize %>
+      </div>
     </div>
-
-    <div class="card-category-big">
-      Short desc.
-    </div>
-
-  </div>
+  <% end %>
+</div>

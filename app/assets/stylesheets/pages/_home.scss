@@ -28,7 +28,12 @@
   background-color: black;
 }
 
-.cards {
+.category-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category-card {
   display:flex;
   grid-template-columns: 1fr;
   grid-gap: 16px;
@@ -44,19 +49,19 @@
   }
 }
 
-.card-category-small {
+.left-category-card {
   font-size: 20px;
   color: white;
   margin: 10px 10px 10px 10px;
   font-family: 'Red Hat Display';
   border: 1px solid white;
   min-width: 150px;
-  margin: 10px 30px 10px -20px;
+  margin: 10px 30px 10px -8px;
   background-color: #1B1C1E;
 
 }
 
-.card-category-big {
+.right-category-card {
   font-size: 20px;
   color: white;
   margin: 10px 10px 10px 10px;
