@@ -38,3 +38,6 @@ opinion_2 = Opinion.create!(politician: politician_2, theme: theme_3,content: "l
 opinion_3 = Opinion.create!(politician: politician_3, theme: theme_2,content: "Le conflit au Sahara occidental est un conflit militaire qui a débuté en 1957 alors que la zone est sous contrôle espagnol. Le conflit oppose au départ le Maroc contre l'Espagne.")
 opinion_4 = Opinion.create!(politician: politician_1, theme: theme_4,content: "Donald Trump annonce que le Maroc s'engage à normaliser ses relations avec Israël")
 opinion_5 = Opinion.create!(politician: politician_1, theme: theme_1,content: "Au Maroc, le gouvernement veut légaliser le cannabis « thérapeutique » Le projet de loi prévoit la création d'une « agence nationale de régulation » chargée de « développer un circuit agricole et industriel ».")
+
+
+puts "Finished seeding content"
