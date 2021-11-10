@@ -56,9 +56,15 @@
   font-family: 'Red Hat Display';
   border: 1px solid white;
   min-width: 150px;
-  margin: 10px 30px 10px -8px;
+  margin: 10px 30px 10px 10px;
   background-color: #1B1C1E;
 
+}
+
+.left-category-card img {
+  height: 100%;
+  width: 146px;
+  object-fit: cover;
 }
 
 .right-category-card {
@@ -70,5 +76,13 @@
   min-width: 700px;
   margin: 10px 300px 10px -25px;
   background-color: #1B1C1E;
-
+}
+.right-category-card p {
+  font-size: 20px;
+  line-height: 1.4;
+  opacity: .7;
+  font-family: 'Red Hat Display';
+  margin-bottom: 0;
+  margin-top: 8px;
+  padding: 16px;
 }
