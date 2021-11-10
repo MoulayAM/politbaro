@@ -20,6 +20,12 @@
   margin: 10px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .btn-flat:hover {
   background: rgb(255, 170, 170);
   color: white;
