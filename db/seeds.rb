@@ -30,20 +30,20 @@ politician_15 = Politician.create!(id: 15,name: "Mohamed Nabil Benabdallah",img_
 
 puts "done creating politician"
 
-theme_1 = Theme.create!(title: "L'immigration")
-theme_2 = Theme.create!(title: "Le Pass Vaccinal")
-theme_3 = Theme.create!(title: "La Sahara Marocain")
-theme_4 = Theme.create!(title: "Les relations avec Israel")
-theme_5 = Theme.create!(title: "Legalisation du cannabis")
+theme_1 = Theme.create!(title: "https://res.cloudinary.com/politbaro/image/upload/v1636634200/UE_lutte_contre_exploitation_migrants_migration_197667259_Drupal_vbxhqf.jpg")
+theme_2 = Theme.create!(title: "https://res.cloudinary.com/politbaro/image/upload/v1636635043/pass-vaccinal-2_rlgp2s.jpg")
+theme_3 = Theme.create!(title: "https://res.cloudinary.com/politbaro/image/upload/v1636635276/php3tfG75_b5ptkz.jpg")
+theme_4 = Theme.create!(title: "https://i1.wp.com/leseco.ma/wp-content/uploads/2021/01/Maroc-Israel-1.jpg?w=1200&ssl=1")
+theme_5 = Theme.create!(title: "https://i.f1g.fr/media/cms/704x396_cropupscale/2021/05/26/fd8cd13147b7409eb9831338c17505183d1b868a325a3843bfc11afb01743ae9.jpg")
 
 puts "done creating theme"
 
 
 opinion_1 = Opinion.create!(politician: politician_1, theme: theme_1, content: "Face aux différents et profonds changements des dynamiques migratoires, le Maroc a choisi souverainement de mettre en place une nouvelle politique migratoire ", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
-opinion_2 = Opinion.create!(politician: politician_2, theme: theme_3,content: "le Maroc a lancé un pass vaccinal anti-Covid, le premier dans un pays du Maghreb. ", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
-opinion_3 = Opinion.create!(politician: politician_3, theme: theme_2,content: "Le conflit au Sahara occidental est un conflit militaire qui a débuté en 1957 alors que la zone est sous contrôle espagnol. Le conflit oppose au départ le Maroc contre l'Espagne.", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
+opinion_2 = Opinion.create!(politician: politician_2, theme: theme_2,content: "le Maroc a lancé un pass vaccinal anti-Covid, le premier dans un pays du Maghreb. ", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
+opinion_3 = Opinion.create!(politician: politician_3, theme: theme_3,content: "Le conflit au Sahara occidental est un conflit militaire qui a débuté en 1957 alors que la zone est sous contrôle espagnol. Le conflit oppose au départ le Maroc contre l'Espagne.", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
 opinion_4 = Opinion.create!(politician: politician_1, theme: theme_4,content: "Donald Trump annonce que le Maroc s'engage à normaliser ses relations avec Israël", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
-opinion_5 = Opinion.create!(politician: politician_1, theme: theme_1,content: "Au Maroc, le gouvernement veut légaliser le cannabis « thérapeutique » Le projet de loi prévoit la création d'une « agence nationale de régulation » chargée de « développer un circuit agricole et industriel ».", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
+opinion_5 = Opinion.create!(politician: politician_1, theme: theme_5,content: "Au Maroc, le gouvernement veut légaliser le cannabis « thérapeutique » Le projet de loi prévoit la création d'une « agence nationale de régulation » chargée de « développer un circuit agricole et industriel ».", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
 
 puts "done creating opinion"
 
