@@ -1,7 +1,11 @@
 class PoliticiansController < ApplicationController
-  def index
-    @politicians = Politician.all
-  end
+ def index
+    if params[:query].present?
+      @politicians = Politician.where("name ILIKE '%#{params[:query]}%'")
+    else
+      @politicians = Politician.all
+    end
+end
 
   def show
     @politician = Politician.find(params[:id])
