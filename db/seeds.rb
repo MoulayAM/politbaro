@@ -34,9 +34,10 @@ theme_4 = Theme.create!(title: "Les relations avec Israel")
 theme_5 = Theme.create!(title: "Legalisation du cannabis")
 
 
-
 opinion_1 = Opinion.create!(politician: politician_1, theme: theme_1, content: "Face aux différents et profonds changements des dynamiques migratoires, le Maroc a choisi souverainement de mettre en place une nouvelle politique migratoire ", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
 opinion_2 = Opinion.create!(politician: politician_2, theme: theme_3,content: "le Maroc a lancé un pass vaccinal anti-Covid, le premier dans un pays du Maghreb. ", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
 opinion_3 = Opinion.create!(politician: politician_3, theme: theme_2,content: "Le conflit au Sahara occidental est un conflit militaire qui a débuté en 1957 alors que la zone est sous contrôle espagnol. Le conflit oppose au départ le Maroc contre l'Espagne.", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
 opinion_4 = Opinion.create!(politician: politician_1, theme: theme_4,content: "Donald Trump annonce que le Maroc s'engage à normaliser ses relations avec Israël", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
 opinion_5 = Opinion.create!(politician: politician_1, theme: theme_1,content: "Au Maroc, le gouvernement veut légaliser le cannabis « thérapeutique » Le projet de loi prévoit la création d'une « agence nationale de régulation » chargée de « développer un circuit agricole et industriel ».", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
+
+puts "Finished seeding content"
