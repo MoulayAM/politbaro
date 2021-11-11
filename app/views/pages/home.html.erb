@@ -5,8 +5,7 @@
 
 <body class="dark">
 
-
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/politbaro/image/upload/v1636645932/Abdelhak%20politicans%20/background_homepage_1_igpuci.webp);">
     <div class="container">
         <h1> Leveraging <strong>data</strong> to hold politicians accountable </h1>
         <p>Explore politicians news and opinions, and make your voice heard!</p>
@@ -26,7 +25,6 @@
     </div>
   </div>
 
-
 </body>
 
 <div class=“category-cards”>
@@ -39,7 +37,9 @@
       </div>
 
       <div class="right-category-card">
-        <%= politician.bio.truncate(150).capitalize %>
+        <h1><%= politician.name %></h1>
+        <p><%= politician.bio.truncate(174).capitalize %></p>
+
       </div>
     </div>
   <% end %>

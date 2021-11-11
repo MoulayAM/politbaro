@@ -12,7 +12,6 @@
   font-size: 60px;
   font-weight: bold;
   font-family: 'Red Hat Display';
-  font-weight: bold;
   margin: 10px 300px 10px -3px;
 }
 
@@ -54,21 +53,44 @@
   color: white;
   margin: 10px 10px 10px 10px;
   font-family: 'Red Hat Display';
-  border: 1px solid white;
+  border: 1px solid #ffffff88;
   min-width: 150px;
-  margin: 10px 30px 10px -8px;
+  margin: 10px 30px 10px 10px;
   background-color: #1B1C1E;
 
+}
+
+.left-category-card img {
+  height: 100%;
+  width: 146px;
+  object-fit: cover;
 }
 
 .right-category-card {
   font-size: 20px;
   color: white;
-  margin: 10px 10px 10px 10px;
+
   font-family: 'Red Hat Display';
-  border: 1px solid white;
+
   min-width: 700px;
   margin: 10px 300px 10px -25px;
   background-color: #1B1C1E;
+}
+.right-category-card p {
+  font-size: 20px;
+  line-height: 1.4;
+  opacity: .7;
+  font-family: 'Red Hat Display';
+  margin-bottom: 0;
+  padding: 12px 0 6px 20px;
+}
 
+.right-category-card h1 {
+  font-size: 20px;
+  line-height: 1.4;
+  opacity: .7;
+  font-family: 'Red Hat Display';
+  padding: 12px 0 6px 20px;
+  font-weight: bold;
+  color:#889CE7;
 }

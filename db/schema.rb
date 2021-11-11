@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2021_11_11_131708) do
 
   create_table "news", force: :cascade do |t|
     t.string "title"
+    t.string "news_url"
     t.bigint "politician_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -25,6 +26,7 @@ ActiveRecord::Schema.define(version: 2021_11_11_131708) do
 
   create_table "opinions", force: :cascade do |t|
     t.text "content"
+    t.string "opinion_url"
     t.bigint "politician_id", null: false
     t.bigint "theme_id", null: false
     t.datetime "created_at", precision: 6, null: false
