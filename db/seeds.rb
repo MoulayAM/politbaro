@@ -27,11 +27,11 @@ politician_13 = Politician.create!(name: "Driss Lachgar",img_url: "https://res.c
 politician_14 = Politician.create!(name: "Saad Dine El Otmani",img_url: "https://res.cloudinary.com/politbaro/image/upload/v1636554736/Abdelhak%20politicans%20/saad_eddine_otmani_nijkvt.jpg",bio: "né le 16 janvier 1956 à Inezgane, est un homme d'État marocain, chef du gouvernement du Maroc du 5 avril 2017 au 7 octobre 2021. Psychiatre de formation et auteur d'ouvrages sur le droit islamique, il est élu député en 1997 pour le Parti de la justice et du développement (PJD) dont il est membre")
 politician_15 = Politician.create!(name: "Mohamed Nabil Benabdallah",img_url: "https://res.cloudinary.com/politbaro/image/upload/v1636540938/Abdelhak%20politicans%20/Benabdellah_mygpxy.jpg",bio: "né le 3 juin 1959 à Rabat) est un homme politique marocain , ancien ministre de l'Habitat, de l'Urbanisme et de la Politique de la ville dans le gouvernement Benkirane. Il est le secrétaire général du Parti du progrès et du socialisme (PPS).")
 
-theme_1 = Theme.create!(title: "https://res.cloudinary.com/politbaro/image/upload/v1636620810/11bc1fd881b987eb9c762e258f11ad49_xsnqge.png")
-theme_2 = Theme.create!(title: "https://res.cloudinary.com/politbaro/image/upload/v1636621063/d2b6076eda7a25ef7c0cc581324178ec_bej8od.png")
-theme_3 = Theme.create!(title: "https://res.cloudinary.com/politbaro/image/upload/v1636620944/93fbffc2fce60f6ac9bfc612eb119210_js7qi8.png")
-theme_4 = Theme.create!(title: "https://res.cloudinary.com/politbaro/image/upload/v1636621177/8e959f303c0e7441612c32b587e3b49d_af5fvd.png")
-theme_5 = Theme.create!(title: "https://res.cloudinary.com/politbaro/image/upload/v1636621319/830cb07670acc73e420d2652c9633ead_fnsmxe.png")
+theme_1 = Theme.create!(title: "https://res.cloudinary.com/politbaro/image/upload/v1636634200/UE_lutte_contre_exploitation_migrants_migration_197667259_Drupal_vbxhqf.jpg")
+theme_2 = Theme.create!(title: "https://res.cloudinary.com/politbaro/image/upload/v1636635043/pass-vaccinal-2_rlgp2s.jpg")
+theme_3 = Theme.create!(title: "https://res.cloudinary.com/politbaro/image/upload/v1636635276/php3tfG75_b5ptkz.jpg")
+theme_4 = Theme.create!(title: "https://i1.wp.com/leseco.ma/wp-content/uploads/2021/01/Maroc-Israel-1.jpg?w=1200&ssl=1")
+theme_5 = Theme.create!(title: "https://i.f1g.fr/media/cms/704x396_cropupscale/2021/05/26/fd8cd13147b7409eb9831338c17505183d1b868a325a3843bfc11afb01743ae9.jpg")
 
 
 
