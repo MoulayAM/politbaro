@@ -1,14 +1,25 @@
-
+<head>
+ <link href='https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap' rel='stylesheet' type='text/css'>
+</head>
 
 <body class="noir">
-<div class="container">
-<% @opinions.each do |opinion| %>
-<div class="card-product">
-  <h2><%= opinion.theme.title %> </h2>
-  <div class="card-product-infos">
-    <p><%= link_to opinion.content, opinion.opinion_url %></p>
+      <div class="containers">
+        <div class=image>
+          <img src="https://res.cloudinary.com/politbaro/image/upload/v1636554911/Abdelhak%20politicans%20/nasser_bourita_ic4kxo.jpg" alt="Abdellah" width="200px">
+        </div>
+      </div>
+        <p class="pam">Politicians opinions</p>
+ <% @opinions.each do |opinion| %>
+ <div class=“category-cards”>
+    <div class="category-cardes">
+      <div class="left-category-cardes">
+      <img src="<%= opinion.theme.title %>"/>
+    </div>
+
+      <div class="right-category-card">
+          <p><%= opinion.content %></p>
+          <h1><%= link_to 'See more..', opinion.opinion_url %></h1>
+      </div>
   </div>
-</div>
-<% end %>
-</div>
+  <% end %>
 </body>

@@ -1,0 +1,56 @@
+.noir {
+  background-color: #141416;
+}
+
+.category-cardes {
+  display:flex;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  color: white;
+  margin: 10px 600px 10px 70px;
+  height: 180px;
+
+}
+
+.right-category-card a {
+  text-decoration: none;
+  color: #6676AB;
+}
+
+
+
+
+.left-category-cardes img {
+  height: 100%;
+  width: 146px;
+}
+
+.left-category-cardes {
+  font-size: 20px;
+  color: white;
+  margin: 10px 10px 10px 10px;
+  font-family: 'Red Hat Display';
+  border: 1px solid #ffffff88;
+  min-width: 150px;
+  margin: 10px 30px 10px 10px;
+  background-color: #1B1C1E;
+
+}
+
+.image img {
+  border-radius: 4%;
+}
+
+.containers {
+  width: 200px;
+  margin: 40px auto;
+}
+
+.pam {
+  font-size: 30px;
+  color: white;
+  margin: 20px 600px 10px -3px;
+  font-family: 'Red Hat Display';
+  padding: 30px;
+}
+
