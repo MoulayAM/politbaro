@@ -1,34 +1,100 @@
-.card-product {
-  overflow: hidden;
-  height: 120px;
-  background: #141416;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-  display: flex;
-  align-items: center;
-}
-
-
-.card-product h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-  color: #FD6262;
-}
-
-.card-product a {
-  font-size: 16px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-  color: white;
-  text-decoration: none;
-}
-
-.card-product .card-product-infos {
-  padding: 16px;
-}
-
 .noir {
   background-color: #141416;
+}
+
+.category-cardes {
+  display:flex;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  color: white;
+  margin: 10px 600px 10px 70px;
+  height: 180px;
+
+}
+
+.right-category-card a {
+  text-decoration: none;
+  color: #6676AB;
+}
+
+
+
+
+.left-category-cardes img {
+  height: 100%;
+  width: 146px;
+}
+
+.left-category-cardes {
+  font-size: 20px;
+  color: white;
+  margin: 10px 10px 10px 10px;
+  font-family: 'Red Hat Display';
+  border: 1px solid #ffffff88;
+  min-width: 150px;
+  margin: 10px 30px 10px 10px;
+  background-color: #1B1C1E;
+
+}
+
+.image img {
+  border-radius: 4%;
+}
+
+.containers {
+  width: 200px;
+  margin: 40px auto;
+}
+
+.pam {
+  font-size: 30px;
+  color: white;
+  margin: 20px 600px 10px -3px;
+  font-family: 'Red Hat Display';
+  padding: 30px;
+}
+
+.wrappers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: url("https://res.cloudinary.com/politbaro/image/upload/v1636554911/Abdelhak%20politicans%20/nasser_bourita_ic4kxo.jpg");
+    background-size: cover;
+    cursor: pointer;
+    border: 12px;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s;
+    border-top-right-radius: 35px !important;
+    border-radius: 6px
+}
+
+.profile:hover .overlay {
+    opacity: 1
+}
+
+
+.overlay .about {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 40%;
+    color: #fff;
+    flex: column
 }

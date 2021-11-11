@@ -1,14 +1,31 @@
-
+<head>
+ <link href='https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap' rel='stylesheet' type='text/css'>
+</head>
 
 <body class="noir">
-<div class="container">
-<% @opinions.each do |opinion| %>
-<div class="card-product">
-  <h2><%= opinion.theme.title %> </h2>
-  <div class="card-product-infos">
-    <p><%= link_to opinion.content, opinion.opinion_url %></p>
+<div class="wrappers">
+    <div class="profile">
+        <div class="overlay">
+            <div class="about d-flex flex-column">
+                <h4>Nasser Bourita</h4>
+            </div>
+        </div>
+    </div>
+</div>
+      <div class="containers">
+      </div>
+        <p class="pam">Politics | Opinion</p>
+ <% @opinions.each do |opinion| %>
+ <div class=“category-cards”>
+    <div class="category-cardes">
+      <div class="left-category-cardes">
+      <img src="<%= opinion.theme.title %>"/>
+    </div>
+
+      <div class="right-category-card">
+          <p><%= opinion.content %></p>
+          <h1><%= link_to 'See more..', opinion.opinion_url %></h1>
+      </div>
   </div>
-</div>
-<% end %>
-</div>
+  <% end %>
 </body>
