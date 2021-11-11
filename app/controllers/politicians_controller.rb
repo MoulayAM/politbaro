@@ -23,9 +23,8 @@ class PoliticiansController < ApplicationController
 
     @politician.total_stars = @politician.total_stars + params[:notation]
     @politician.total_voters = @politician.total_voters + 1
+    @politician.moyenne =  @politician.total_stars / @politician.total_voters
     @politician.save
-    @moyenne =  @politician.total_stars / @politician.total_voters
-
   end
 
   # def top

@@ -5,13 +5,16 @@
     <%= link_to politician.name, politician_path(politician) %>
     <div class="card align-self" style="background-image: url( <%= politician.img_url %>)">
     </div>
-      <p> number of stars : <%= politician.moyenne %> </p>
-      <% politician.moyenne.times do %>
-        <span class="fa fa-star" ></span>
-      <% end %>
-       <% (5 -politician.moyenne).times do %>
-        <span class="fa fa-star" ></span>
-      <% end %>
+      <div class="popularity">
+        <p> <strong> Popularity Level  </strong> : <%= politician.moyenne %> </p>
+        <% politician.moyenne.times do %>
+          <span class="fa fa-star filled" ></span>
+        <% end %>
+         <% (5 -politician.moyenne).times do %>
+          <span class="fa fa-star" ></span>
+        <% end %>
+      </div>
+
   </div>
   <% end %>
 </div>
