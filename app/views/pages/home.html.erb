@@ -39,7 +39,9 @@
       </div>
 
       <div class="right-category-card">
-        <%= politician.bio.truncate(150).capitalize %>
+        <h1><%= politician.name %></h1>
+        <p><%= politician.bio.truncate(174).capitalize %></p>
+
       </div>
     </div>
   <% end %>
