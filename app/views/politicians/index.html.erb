@@ -1,13 +1,26 @@
 
-
-<ul>
+<div class="d-flex justify-content-around flex-wrap">
   <% @politicians.each do |politician| %>
-    <li><%= link_to politician.name, politician_path(politician) %></li>
-    <li><%= link_to politician.bio, politician_path(politician) %></li>
+  <div class="d-flex justify-content-center flex-wrap autour">
+    <%= link_to politician.name, politician_path(politician) %>
+    <div class="card align-self" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( <%= politician.img_url %>)">
+    </div>
+      <p> number of stars : <%= politician.moyenne %> </p>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="star-rating">
+              <% 4.times do %>
+                <span class="fa fas-star" ></span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
   <% end %>
-</ul>
+</div>
 
-
-  <% @politicians.each do |politician| %>
-  <p> number of stars : <%= politician.moyenne%> </p>
-  <%end%>
+<%#     <li><%= link_to politician.bio, politician_path(politician) %>
+ <%# <li><%= link_to politician.img_url, politician_path(politician) %>

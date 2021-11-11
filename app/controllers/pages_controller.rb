@@ -3,4 +3,7 @@ class PagesController < ApplicationController
   def home
     @popular_politicians = Politician.all.take(3)
   end
+
+
+
 end
