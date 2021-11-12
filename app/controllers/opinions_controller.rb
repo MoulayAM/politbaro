@@ -1,6 +1,7 @@
 class OpinionsController < ApplicationController
   def index
     @opinions = Opinion.where(politician_id:params[:politician_id])
+    @politician = Politician.find(params[:politician_id])
   end
 
   def new
