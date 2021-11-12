@@ -3,7 +3,7 @@
   <% @politicians.each do |politician| %>
   <div class="d-flex justify-content-center flex-wrap autour">
     <%= link_to politician.name, politician_path(politician) %>
-    <div class="card align-self" style="background-image: url( <%= politician.img_url %>)">
+    <div class="card align-self" style="background-image: url( <%= cl_image_path politician.photo.key, height: 300, crop: :fill %>)">
     </div>
       <div class="popularity">
         <p> <strong> Popularity Level  </strong> : <%= politician.moyenne %> </p>
@@ -21,3 +21,5 @@
 
 <%#     <li><%= link_to politician.bio, politician_path(politician) %>
  <%# <li><%= link_to politician.img_url, politician_path(politician) %>
+
+<%# Line 6 cl_image_path politician.photo.key was added by Abdelhak as part of cloudinary setup %>
