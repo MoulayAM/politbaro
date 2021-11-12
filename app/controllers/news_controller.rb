@@ -4,6 +4,9 @@ class NewsController < ApplicationController
         @news = News.where(politician_id: params[:politician_id])
         @politician = Politician.find(params[:politician_id])
         
+        @comment = Comment.new
+        @comments = Comment.all
+        
     end
 
     def new 
@@ -15,6 +18,11 @@ class NewsController < ApplicationController
         @news.save
         redirect_to news_path(@news)
     end
+
+    def show
+        
+    end
+
     
     private
 
