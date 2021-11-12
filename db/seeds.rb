@@ -39,11 +39,24 @@ theme_5 = Theme.create!(title: "https://i.f1g.fr/media/cms/704x396_cropupscale/2
 
 puts "done creating theme"
 
-opinion_1 = Opinion.create!(politician: politician_1, theme: theme_1, content: "Face aux différents et profonds changements des dynamiques migratoires, le Maroc a choisi souverainement de mettre en place une nouvelle politique migratoire ", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
-opinion_2 = Opinion.create!(politician: politician_2, theme: theme_2,content: "le Maroc a lancé un pass vaccinal anti-Covid, le premier dans un pays du Maghreb. ", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
-opinion_3 = Opinion.create!(politician: politician_3, theme: theme_3,content: "Le conflit au Sahara occidental est un conflit militaire qui a débuté en 1957 alors que la zone est sous contrôle espagnol. Le conflit oppose au départ le Maroc contre l'Espagne.", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
-opinion_4 = Opinion.create!(politician: politician_1, theme: theme_4,content: "Donald Trump annonce que le Maroc s'engage à normaliser ses relations avec Israël", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
-opinion_5 = Opinion.create!(politician: politician_1, theme: theme_5,content: "Au Maroc, le gouvernement veut légaliser le cannabis « thérapeutique » Le projet de loi prévoit la création d'une « agence nationale de régulation » chargée de « développer un circuit agricole et industriel ».", opinion_url: 'https://www.mapnews.ma/fr/actualites/politique/biographie-de-m-aziz-akhannouch-pr%C3%A9sident-du-rni-que-sm-le-roi-nomm%C3%A9-chef-du')
+opinion_1 = Opinion.create!(politician: politician_1, theme: theme_1, content: "On Monday, February 6, Morocco’s agriculture minister, Aziz Akhannouch, released a statement warning that any obstacles to...", opinion_url: 'https://english.elpais.com/elpais/2017/02/27/inenglish/1488185422_295555.html')
+opinion_2 = Opinion.create!(politician: politician_1, theme: theme_2,content: "A la mairie d’Agadir, Aziz Akhannouch impose le pass sanitaire à tout le monde...", opinion_url: 'https://fr.le360.ma/politique/a-la-mairie-dagadir-aziz-akhannouch-impose-le-pass-sanitaire-a-tout-le-monde-248739')
+opinion_3 = Opinion.create!(politician: politician_1, theme: theme_3,content: "Akhannouch : Le discours royal a été marqué par la franchise, la clarté et la fermeté...", opinion_url: 'https://www.lavieeco.com/actualite-maroc/akhannouch-le-discours-royal-a-ete-marque-par-la-franchise-la-clarte-et-la-fermete/')
+opinion_4 = Opinion.create!(politician: politician_1, theme: theme_4,content: "Le gouvernement Akhannouch examine deux accords avec Israël...", opinion_url: 'https://www.yabiladi.com/articles/details/117900/gouvernement-akhannouch-examine-deux-accords.html')
+opinion_5 = Opinion.create!(politician: politician_1, theme: theme_5,content: "Aziz Akhannouch: «Le projet de loi sur l’usage légal du chanvre indien est porteur de nouvelles perspectives»...", opinion_url: 'https://fr.le360.ma/politique/aziz-akhannouch-le-projet-de-loi-sur-lusage-legal-du-chanvre-indien-est-porteur-de-nouvelles-234994')
+
+
+opinion_1 = Opinion.create!(politician: politician_2, theme: theme_1, content: "N/A", opinion_url: 'N/A')
+opinion_2 = Opinion.create!(politician: politician_2, theme: theme_2,content: "N/A", opinion_url: 'N/A')
+opinion_3 = Opinion.create!(politician: politician_2, theme: theme_3,content: "N/A", opinion_url: 'N/A')
+opinion_4 = Opinion.create!(politician: politician_2, theme: theme_4,content: "MHE: «plusieurs investisseurs de renom, Américains et Israéliens, veulent s’implanter au Maroc»...", opinion_url: 'https://fr.le360.ma/economie/info360-mhe-plusieurs-investisseurs-de-renom-americains-et-israeliens-veulent-simplanter-au-maroc-229162')
+opinion_5 = Opinion.create!(politician: politician_2, theme: theme_5,content: "N/A", opinion_url: 'N/A')
+
+opinion_1 = Opinion.create!(politician: politician_3, theme: theme_1, content: "نبيلة منيب: بسبب الريع والاحتكار والسطو على الخيرات يلجأ الشباب المغاربة إلى الهجرة", opinion_url: 'http://bledna.com/212972/')
+opinion_2 = Opinion.create!(politician: politician_3, theme: theme_2,content: "Nabila Mounib s’attaque à l’efficacité du vaccin contre Covid... ", opinion_url: 'https://fnh.ma/article/actualite-politique/elections-nabila-mounib-s-attaque-a-l-efficacite-du-vaccin-contre-covid')
+opinion_3 = Opinion.create!(politician: politician_3, theme: theme_3,content: "Nabila Mounib vilipendée par les internautes...", opinion_url: 'https://fr.le360.ma/societe/revue-du-web-politique-nabila-mounib-vilipendee-par-les-internautes-241383')
+opinion_4 = Opinion.create!(politician: politician_3, theme: theme_4,content: "Nabila Mounib : Le Maroc n’a pas besoin d’aide pour accomplir son intégrité territoriale...", opinion_url: 'https://telquel.ma/2020/12/10/nabila-mounib-le-maroc-na-pas-besoin-daide-pour-accomplir-son-integrite-territoriale_1704432')
+opinion_5 = Opinion.create!(politician: politician_3, theme: theme_5,content: "N/A", opinion_url: 'N/A')
 
 puts "done creating opinion"
 
