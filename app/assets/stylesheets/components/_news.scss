@@ -1,4 +1,5 @@
 .container-cover {
+    padding: 40px;
     background-color: black;
 }
 
@@ -9,13 +10,20 @@
         padding: 20px;
         text-align: center;
         font-family: Georgia, serif;
+        text-decoration: underline overline #FF3028;
     }
     ul {
         color: white;
+        background-color: #141416;
+        padding: 60px;
+        
     }
     h2 {
         color: rgb(255, 129, 83);
         font-size: 15px;
+        
+       
+
     }
 
 } 
