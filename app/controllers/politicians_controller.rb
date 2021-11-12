@@ -31,6 +31,8 @@ end
     @politician.save
   end
 
+
+
   # def top
   #   @politicians = Polititian.where(moyenne: 5)
   # end

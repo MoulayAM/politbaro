@@ -1,3 +1,6 @@
 <h2><%= @politician.name %></h2>
 <p><%= @politician.bio %></p>
 <p><%= @moyenne %></p>
+
+<%= cl_image_tag @politician.photo.key, height: 300, width: 400, crop: :fill %>
+<%# Added by Abdelhak as part of cloudinary setup %>
