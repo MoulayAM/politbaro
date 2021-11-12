@@ -1,0 +1,41 @@
+.btn-ghostt {
+    color: white;
+    border: 5px solid white;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin: 10px 10px 10px 30px;
+    background: #FD6262;
+    transition: opacity 0.3s ease;
+
+
+  :hover {
+    opacity: 1;
+  }
+}
+  .col-md-9 h1 {
+    color: white
+  }
+  .politician-img img {
+    width: 200px;
+    height: 150px;
+    background-size: cover
+  }
+  .container-body {
+    border-radius: 25px;
+    border: 2px solid black;
+    color: black;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    h1 {
+        text-align: justify;
+        font-size: 15px;
+        background-color: white;
+        font-style: bold;
+
+    }
+    .politician-img {
+        padding: 15px;
+        margin-left: 100px;
+    }
+
+}
