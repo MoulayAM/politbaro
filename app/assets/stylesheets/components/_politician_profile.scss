@@ -39,14 +39,17 @@
 
 }
 .col-sm-4 {
+  margin-top: 10px;
   color: #8295DD;
-  font-family: 'Red Hat Display';
   background-size: cover;
+  border-radius: 10px;
+
 }
-.col-sm-7.bio-container {
+.col-sm-8.bio-container {
+  border-radius: 10px;
+  margin-top: 10px;
   padding-top: 30px;
   color: white;
-  font-family: 'Red Hat Display';
   background-color: #1B1C1E;
   max-height: 300px;
 }
