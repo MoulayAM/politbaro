@@ -1,3 +1,4 @@
+require "open-uri"
 
 Opinion.destroy_all
 Theme.destroy_all
@@ -6,6 +7,12 @@ Politician.destroy_all
 User.destroy_all
 
 puts "done deleting tables"
+
+def attach_photo(politician)
+  file = URI.open(politician.img_url)
+  politician.photo.attach(io: file, filename: "#{politician.name}.png", content_type: 'image/png')
+end
+#Above line added by Abdelhak as part of cloudinary setup
 
 politician_1 = Politician.create!(id: 1,name: "Aziz Akhannouch",img_url: "https://res.cloudinary.com/politbaro/image/upload/v1636540938/Abdelhak%20politicans%20/aziz-akhannouch_dkmoag.jpg",bio: "né en 1961 à Tafraout, est un homme d'affaires et homme d'État marocain, chef du gouvernement du Maroc depuis le 7 octobre 2021. Il est l'un des actionnaires principaux d'Akwa Group. Sa fortune personnelle est estimée à deux milliards de dollars d'après le classement 2019 du magazine Forbes.",total_voters:5, total_stars: 16)
 politician_2 = Politician.create!(id: 2,name: "Moulay Hafid Elalamy",img_url: "https://res.cloudinary.com/politbaro/image/upload/v1636551159/Abdelhak%20politicans%20/MHE_wed8mh.jpg",bio: " souvent désigné par l'acronyme MHE, né le 13 janvier 1960 à Marrakech, est un homme d'affaires et homme politique marocain. Fondateur du Groupe Saham, il est à la tête de la CGEM de 2006 à 2009 et Ministre de l'Industrie et du Commerce du Maroc de 2013 à 2021.",total_voters:5, total_stars: 15)
@@ -26,6 +33,7 @@ politician_15 = Politician.create!(id: 15,name: "Mohamed Nabil Benabdallah",img_
 Politician.all.each do |politician|
   politician.moyenne = politician.total_voters != 0 ? politician.total_stars / politician.total_voters : 0
   politician.save
+  attach_photo(politician)
 end
 
 puts "done creating politician"
@@ -85,6 +93,7 @@ news_21 = News.create!(news_url: "https://www.africaintelligence.fr/afrique-du-n
 news_22 = News.create!(news_url: "https://www.lopinion.ma/Nabila-Mounib-au-Parlement-allume-la-Toile_a20150.html", title: "Nabila Mounib au Parlement allume la Toile...",politician: politician_3)
 news_23 = News.create!(news_url: "https://leseco.ma/business/exclu-saham-dement-un-rapprochement-avec-bank-of-africa.html", title: " Saham dément un rapprochement avec Bank of Africa...", politician: politician_3)
 news_24 = News.create!(news_url: "https://www.menara.ma/fr/article/akhannouch-salue-le-succes-de-la-digitalisation-totale-des-transactions-immobilieres", title: "Akhannouch salue le succès de la digitalisation totale des transactions immobilières...", politician: politician_1)
+news_25= News.create!(news_url: "https://leseco.ma/lapolitique/regions-le-rni-fixe-les-priorites-du-debut-du-mandat.html", title: "Régions : le RNI fixe les priorités du début du mandat...",politician: politician_1)
 
 puts "done creating news"
 
