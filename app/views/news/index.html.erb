@@ -18,19 +18,18 @@
       </div>  
   </div>
 </div>
-  <div class="row justify-content-center">
-      <div class="card-comment">
-        <div class="container-comment">
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
           <%= simple_form_for [@politician, @comment], remote: true do |f| %>
             <%= f.input :content %>
             <%= f.submit class: 'btn btn-primary' %>
           <% end %>
-
         </div>
-      <div class="card-affiche">
-        <% @comments.each do |c| %>
-          <br/> <%= c.content %>
-        <% end %>
-      </div>
+        <div class="col-sm-8 offset-sm-2">
+          <% @comments.each do |c| %>
+            <br/> <%= c.content %>
+          <% end %>
+        </div>
   </div>
 </div>
