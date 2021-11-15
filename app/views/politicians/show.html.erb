@@ -1,12 +1,6 @@
-
-<h2><%= @politician.name %></h2>
-<p><%= @politician.bio %></p>
-<p><%= @moyenne %></p>
-
+<div class="container py-4 my-4 mx-auto d-flex flex-column main-containers">
 <%= cl_image_tag @politician.photo.key, height: 300, width: 400, crop: :fill %>
 <%# Added by Abdelhak as part of cloudinary setup %>
-
-<div class="container py-4 my-4 mx-auto d-flex flex-column">
   <div class="header">
     <div class="row r1">
       <div class="col-md-9 abc">
