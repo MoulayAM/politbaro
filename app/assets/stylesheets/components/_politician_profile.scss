@@ -1,13 +1,12 @@
 .btn-ghostt {
     color: white;
-    border: 5px solid white;
     padding: 8px 24px;
     border-radius: 50px;
     font-weight: bold;
     margin: 10px 10px 10px 30px;
     background: #FD6262;
     transition: opacity 0.3s ease;
-
+    margin-top: 30px;
 
   :hover {
     opacity: 1;
@@ -38,4 +37,19 @@
         margin-left: 100px;
     }
 
+}
+.col-sm-4 {
+  margin-top: 10px;
+  color: #8295DD;
+  background-size: cover;
+  border-radius: 10px;
+
+}
+.col-sm-8.bio-container {
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-top: 30px;
+  color: white;
+  background-color: #1B1C1E;
+  max-height: 300px;
 }
