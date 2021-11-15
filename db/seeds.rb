@@ -93,6 +93,7 @@ news_21 = News.create!(news_url: "https://www.africaintelligence.fr/afrique-du-n
 news_22 = News.create!(news_url: "https://www.lopinion.ma/Nabila-Mounib-au-Parlement-allume-la-Toile_a20150.html", title: "Nabila Mounib au Parlement allume la Toile...",politician: politician_3)
 news_23 = News.create!(news_url: "https://leseco.ma/business/exclu-saham-dement-un-rapprochement-avec-bank-of-africa.html", title: " Saham dément un rapprochement avec Bank of Africa...", politician: politician_3)
 news_24 = News.create!(news_url: "https://www.menara.ma/fr/article/akhannouch-salue-le-succes-de-la-digitalisation-totale-des-transactions-immobilieres", title: "Akhannouch salue le succès de la digitalisation totale des transactions immobilières...", politician: politician_1)
+news_25= News.create!(news_url: "https://leseco.ma/lapolitique/regions-le-rni-fixe-les-priorites-du-debut-du-mandat.html", title: "Régions : le RNI fixe les priorités du début du mandat...",politician: politician_1)
 
 puts "done creating news"
 

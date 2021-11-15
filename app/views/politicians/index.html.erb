@@ -1,5 +1,5 @@
 
-<div class="d-flex justify-content-around flex-wrap">
+<div class="d-flex justify-content-around flex-wrap main-container">
   <% @politicians.each do |politician| %>
   <div class="d-flex justify-content-center flex-wrap autour">
     <%= link_to politician.name, politician_path(politician) %>
