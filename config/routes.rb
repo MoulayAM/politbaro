@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     resources :comments, only: :create
     resources :opinions, only: [:index,:create, :new]
   end
+  resources :surveys, only: [:create,:new,:index]
+  resources :votes, only: :create
   resources :themes, only: [:create, :new]
 end

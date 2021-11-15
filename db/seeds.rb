@@ -4,9 +4,12 @@ Opinion.destroy_all
 Theme.destroy_all
 News.destroy_all
 Politician.destroy_all
+Vote.destroy_all
 User.destroy_all
+Survey.destroy_all
 
 puts "done deleting tables"
+
 
 def attach_photo(politician)
   file = URI.open(politician.img_url)
@@ -96,5 +99,16 @@ news_24 = News.create!(news_url: "https://www.menara.ma/fr/article/akhannouch-sa
 news_25= News.create!(news_url: "https://leseco.ma/lapolitique/regions-le-rni-fixe-les-priorites-du-debut-du-mandat.html", title: "Régions : le RNI fixe les priorités du début du mandat...",politician: politician_1)
 
 puts "done creating news"
+
+user_1 = User.create!(email:'wagon@gmail.com',password:'123456')
+
+survey_1 = Survey.create!(question:'Question 1')
+survey_2 = Survey.create!(question:'Question 2')
+survey_3 = Survey.create!(question:'Question 3')
+survey_4 = Survey.create!(question:'Question 4')
+survey_5 = Survey.create!(question:'Question 5')
+
+vote_1 = Vote.create!(user:user_1,survey:survey_1,agreed:true)
+vote_2 = Vote.create!(user:user_1,survey:survey_2,agreed:true)
 
 puts "Finished seeding content"
