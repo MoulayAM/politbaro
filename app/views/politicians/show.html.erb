@@ -2,8 +2,12 @@
   <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-7 bio-container">
-      <strong>Description :</strong>
+      <h2><strong>BIO </strong></h2>
       <p> <%= @politician.bio %> </p>
+      <div class="d-flex justify-content-center r4">
+        <%= link_to "News", politician_news_index_path(@politician), class:"btn btn-ghostt" %>
+        <%= link_to "Opinions", politician_opinions_path(@politician), class:"btn btn-ghostt" %>
+      </div>
     </div>
     <div class="col-sm-4">
       <%= cl_image_tag @politician.photo.key, height: 300, width: 400, crop: :fill %>
@@ -19,10 +23,7 @@
       </div>
     </div>
     <div class="col-sm-12">
-      <div class="d-flex justify-content-center r4">
-        <%= link_to "News", politician_news_index_path(@politician), class:"btn btn-ghostt" %>
-        <%= link_to "Opinions", politician_opinions_path(@politician), class:"btn btn-ghostt" %>
-      </div>
+
     </div>
   </div>
 </div>

@@ -1,13 +1,12 @@
 .btn-ghostt {
     color: white;
-    border: 5px solid white;
     padding: 8px 24px;
     border-radius: 50px;
     font-weight: bold;
     margin: 10px 10px 10px 30px;
     background: #FD6262;
     transition: opacity 0.3s ease;
-
+    margin-top: 30px;
 
   :hover {
     opacity: 1;
@@ -38,4 +37,16 @@
         margin-left: 100px;
     }
 
+}
+.col-sm-4 {
+  color: #8295DD;
+  font-family: 'Red Hat Display';
+  background-size: cover;
+}
+.col-sm-7.bio-container {
+  padding-top: 30px;
+  color: white;
+  font-family: 'Red Hat Display';
+  background-color: #1B1C1E;
+  max-height: 300px;
 }
