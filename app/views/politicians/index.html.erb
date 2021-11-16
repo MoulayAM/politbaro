@@ -1,21 +1,24 @@
 
 <div class="d-flex justify-content-around flex-wrap main-container">
   <% @politicians.each do |politician| %>
-  <div class="d-flex justify-content-center flex-wrap autour">
-    <%= link_to politician.name, politician_path(politician) %>
-    <div class="card align-self" style="background-image: url( <%= cl_image_path politician.photo.key, height: 300, crop: :fill %>)">
-    </div>
-      <div class="popularity">
-        <p> <strong> Popularity Level  </strong> : <%= politician.moyenne %> </p>
-        <% politician.moyenne.times do %>
-          <span class="fa fa-star filled" ></span>
-        <% end %>
-         <% (5 -politician.moyenne).times do %>
-          <span class="fa fa-star" ></span>
-        <% end %>
+    <%= link_to politician_path(politician), class:"politician_card" do %>
+      <div class="d-flex flex-column justify-content-center align-items-center autour ">
+        <div class="politician-name">
+          <h2><%= politician.name %> </h2>
+        </div>
+        <div class="card align-self" style="background-image: url( <%= cl_image_path politician.photo.key, height: 300, crop: :fill %>)">
+        </div>
+        <div class="popularity">
+          <% politician.moyenne.times do %>
+            <span class="fa fa-star filled" ></span>
+          <% end %>
+          <% (5 -politician.moyenne).times do %>
+            <span class="fa fa-star" ></span>
+          <% end %>
+        </div>
       </div>
+    <% end %>
 
-  </div>
   <% end %>
 </div>
 
