@@ -102,11 +102,12 @@ puts "done creating news"
 
 user_1 = User.create!(email:'wagon@gmail.com',password:'123456')
 
-survey_1 = Survey.create!(question:'Question 1')
-survey_2 = Survey.create!(question:'Question 2')
-survey_3 = Survey.create!(question:'Question 3')
-survey_4 = Survey.create!(question:'Question 4')
-survey_5 = Survey.create!(question:'Question 5')
+survey_1 = Survey.create!(question:'Immigration: Morocco using migration as a bargaining chip with the EU')
+survey_2 = Survey.create!(question:'Immigration: Morocco using migration as a bargaining chip with the EU')
+survey_3 = Survey.create!(question:'Vaccine Pass: Authorities adopt obligatory COVID-19 vaccine pass in all public places')
+survey_4 = Survey.create!(question:'Moroccan Sahara: Morocco affirms Moroccanness of Western Sahara is non-negotiable')
+survey_5 = Survey.create!(question:'Legalization of Cannabis: Government to legalize cannabis for medical
+and industrial')
 
 vote_1 = Vote.create!(user:user_1,survey:survey_1,agreed:true)
 vote_2 = Vote.create!(user:user_1,survey:survey_2,agreed:true)
