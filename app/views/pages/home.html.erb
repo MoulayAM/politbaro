@@ -2,42 +2,40 @@
  <link href='https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap' rel='stylesheet' type='text/css'>
 </head>
 
-
-<div class="banner">
+<div class="politician-wrapper">
+  <div class="banner">
     <div class="container">
-        <h1> Leveraging <strong>data</strong> to hold politicians accountable </h1>
-        <p>Explore politicians news and opinions, and make your voice heard!</p>
+          <h1> Leveraging <strong>data</strong> to hold politicians accountable </h1>
+          <p>Explore politicians news and opinions, and make your voice heard!</p>
 
-          <div class="container">
-            <div class="wrapper">
-              <div class="search-container">
-                    <%= form_tag politicians_path, method: :get do %>
-                      <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Enter a politician's name..." %>
-                      <%= submit_tag "Search", class: "btn btn-primary" %>
-                    <% end %>
+            <div class="container">
+              <div class="wrapper">
+                <div class="search-container">
+                      <%= form_tag politicians_path, method: :get do %>
+                        <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Enter a politician's name..." %>
+                        <%= submit_tag "Search", class: "btn btn-primary" %>
+                      <% end %>
+                </div>
               </div>
             </div>
+
+          <p>Popular politicians 🔥🔥</p>
+    </div>
+  </div>
+
+  <div class=“category-cards”>
+    <% @popular_politicians.each do |politician|  %>
+      <%= link_to politician_path(politician.id) do %>
+        <div class="category-card">
+          <div class="left-category-card">
+            <img src="<%= politician.img_url %>"/>
           </div>
-
-        <p>Popular politicians 🔥🔥</p>
-    </div>
-    </div>
-
-
-<div class=“category-cards”>
-
-  <% @popular_politicians.each do |politician|  %>
-    <%= link_to politician_path(politician.id) do %>
-      <div class="category-card">
-        <div class="left-category-card">
-          <img src="<%= politician.img_url %>"/>
+          <div class="right-category-card">
+            <h1><%= politician.name %></h1>
+            <p><%= politician.bio.truncate(174).capitalize %></p>
+          </div>
         </div>
-
-        <div class="right-category-card">
-          <h1><%= politician.name %></h1>
-          <p><%= politician.bio.truncate(174).capitalize %></p>
-        </div>
-      </div>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
