@@ -12,10 +12,10 @@
       <div class="col-sm-4">
         <div class="d-flex flex-column justify-content-center align-items-center">
           <%= cl_image_tag @politician.photo.key, height: 300, width: 400, crop: :fill %>
-          <div class="politician-name">
+          <div class="politician-name-show">
             <h2><%= @politician.name %> </h2>
           </div>
-          <div class="popularity">
+          <div class="popularity-show">
             <p> <% @politician.moyenne %> </p>
             <% @politician.moyenne.times do %>
               <span class="fa fa-star filled" ></span>
