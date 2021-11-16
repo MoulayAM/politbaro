@@ -1,20 +1,22 @@
 <head>
  <link href='https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap' rel='stylesheet' type='text/css'>
 </head>
-
+<p class="pam"> Your opinion counts</p>
 <% @surveys.each do |survey| %>
 <div class="category-card-survey">
-  <div class="left-category-card col-sm-8">
+  <div class="left-category-card col-sm-12">
       <p class="survey"><%= survey.question %></p>
   </div>
     <div class="left-category-cardes col-sm-4">
       <%= simple_form_for @vote do |f| %>
        <%= f.input :agreed,  as: :hidden, input_html: { value: true } %>
-       <%= f.button :submit, class:"btn btn-flat-surveye btn-success", value:'FOR' %>
+       <%= f.input :survey_id,  as: :hidden, input_html: { value: survey.id } %>
+       <%= f.button :submit, class:"btn btn-flat-surveye btn-success", value:'FOR', disabled: survey.voted?(current_user.id)  %>
       <% end %>
       <%= simple_form_for @vote do |f| %>
         <%= f.input :agreed,  as: :hidden, input_html: { value: false } %>
-        <%= f.button :submit, class:"btn btn-flat-surveys btn-danger", value:'AGAINST'%>
+        <%= f.input :survey_id,  as: :hidden, input_html: { value: survey.id } %>
+        <%= f.button :submit, class:"btn btn-flat-surveys btn-danger", value:'AGAINST', disabled: survey.voted?(current_user.id) %>
       <% end %>
       <h5 class="percent"><%= survey.positive_votes %>%</h5>
       <h5 class="percents"><%= survey.negative_votes %>%</h5>

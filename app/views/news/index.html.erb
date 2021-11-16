@@ -1,6 +1,6 @@
 <div class="container-cover">
   <div class="row justify-content-center">
-      <div class = "container-image">
+      <div  class="img-thumbnail">
         <img src="<%= @politician.img_url %>"/>
       </div>
   </div>
@@ -8,12 +8,14 @@
       <div class="row justify-content-center">
           <div class="col-12 col-lg-6">
             <h1>News : <%= @politician.name %></h1>
+            <div  class="img-thumbnail">
             <ul>
               <% @news.each do |news| %>
                   <li><%= news.title %></li>
                   <h2><%= link_to 'Go to the article ...', news.news_url %></h2>
               <% end %>
             </ul>
+            </div>
           </div>
       </div>  
   </div>

@@ -2,6 +2,10 @@ class Survey < ApplicationRecord
   has_many :votes
   has_many :users, through: :votes
 
+  def voted?(user_id)
+    !Vote.where(user_id: user_id, survey_id: id).first.blank?
+  end
+
   def positive_votes
     total_votes = Vote.where(survey_id: id).count
     positive_votes = Vote.where(survey_id: id).where(agreed: true).count
