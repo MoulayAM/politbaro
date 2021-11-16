@@ -94,6 +94,12 @@ news_22 = News.create!(news_url: "https://www.lopinion.ma/Nabila-Mounib-au-Parle
 news_23 = News.create!(news_url: "https://leseco.ma/business/exclu-saham-dement-un-rapprochement-avec-bank-of-africa.html", title: " Saham dément un rapprochement avec Bank of Africa...", politician: politician_3)
 news_24 = News.create!(news_url: "https://www.menara.ma/fr/article/akhannouch-salue-le-succes-de-la-digitalisation-totale-des-transactions-immobilieres", title: "Akhannouch salue le succès de la digitalisation totale des transactions immobilières...", politician: politician_1)
 news_25= News.create!(news_url: "https://leseco.ma/lapolitique/regions-le-rni-fixe-les-priorites-du-debut-du-mandat.html", title: "Régions : le RNI fixe les priorités du début du mandat...",politician: politician_1)
+news_26= News.create!(news_url: "https://fr.hespress.com/233388-nadia-fettah-alaoui-lemploi-la-sante-et-leducation-des-priorites-du-plf-2022.html", title: "L'emploi, la santé et l'éducation, des priorités du PLF 2022...",politician: politician_9)
+news_27= News.create!(news_url: "https://fr.hespress.com/232750-nasser-bourita-exclut-toute-negociation-sur-la-marocanite-du-sahara.html", title: "Nasser Bourita exclut toute négociation sur la marocanité du Sahara...",politician: politician_7)
+news_28= News.create!(news_url: "https://fr.hespress.com/213642-nasser-bourita-invite-par-yair-lapid-pour-une-visite-officielle-en-israel.html", title: "Nasser Bourita invité par Yair Lapid pour une visite officielle en Israël...",politician: politician_7)
+news_29 = News.create!(news_url: "https://fr.le360.ma/politique/a-la-mairie-dagadir-aziz-akhannouch-impose-le-pass-sanitaire-a-tout-le-monde-248739", title: "A LA MAIRIE D’AGADIR, AZIZ AKHANNOUCH IMPOSE LE PASS SANITAIRE À TOUT LE MONDE", politician: politician_1)
+news_30 = News.create!(news_url: "https://www.africaintelligence.fr/afrique-du-nord_politique/2021/10/13/moulay-hafid-elalamy-plus-influent-que-jamais-dans-l-ombre-de-mohammed-vi,109697881-art" ,title: " Moulay Hafid Elalamy, plus influent que jamais dans l'ombre de Mohammed VI... ",politician: politician_2 )
+news_31 = News.create!(news_url: "https://www.lopinion.ma/Nabila-Mounib-au-Parlement-allume-la-Toile_a20150.html", title: "Nabila Mounib au Parlement allume la Toile...",politician: politician_3)
 
 puts "done creating news"
 
