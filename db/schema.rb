@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_12_143503) do
+ActiveRecord::Schema.define(version: 2021_11_15_145552) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -75,6 +75,12 @@ ActiveRecord::Schema.define(version: 2021_11_12_143503) do
     t.integer "moyenne", default: 0, null: false
   end
 
+  create_table "surveys", force: :cascade do |t|
+    t.text "question"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "themes", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
@@ -93,9 +99,21 @@ ActiveRecord::Schema.define(version: 2021_11_12_143503) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "votes", force: :cascade do |t|
+    t.boolean "agreed", default: false
+    t.bigint "survey_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["survey_id"], name: "index_votes_on_survey_id"
+    t.index ["user_id"], name: "index_votes_on_user_id"
+  end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "comments", "politicians"
   add_foreign_key "news", "politicians"
   add_foreign_key "opinions", "politicians"
   add_foreign_key "opinions", "themes"
+  add_foreign_key "votes", "surveys"
+  add_foreign_key "votes", "users"
 end

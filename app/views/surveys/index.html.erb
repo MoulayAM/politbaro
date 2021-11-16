@@ -1,0 +1,8 @@
+<% @surveys.each do |survey| %>
+<div style="color:white">
+  <%= survey.question %>
+  <%= survey.positive_votes %>
+  <%= survey.negative_votes %>
+  </div>
+  <br/>
+<% end %>
