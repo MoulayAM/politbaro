@@ -3,6 +3,7 @@ require "open-uri"
 Opinion.destroy_all
 Theme.destroy_all
 News.destroy_all
+Comment.destroy_all
 Politician.destroy_all
 Vote.destroy_all
 User.destroy_all
