@@ -1,7 +1,7 @@
 <div class="container-cover">
   <div class="row justify-content-center">
       <div  class="img-thumbnail">
-        <img src="<%= @politician.img_url %>"/>
+        <%= cl_image_tag @politician.photo.key, height: 300, width: 400, crop: :fill %>
       </div>
   </div>
   <div class = "container-news">
