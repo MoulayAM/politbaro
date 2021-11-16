@@ -32,6 +32,11 @@
   flex-wrap: wrap;
 }
 
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
 .category-card {
   display:flex;
   grid-template-columns: 1fr;
@@ -40,8 +45,8 @@
   color: white;
   margin: 10px 600px 10px 70px;
   height: 180px;
-
 }
+
 @media (min-width: 992px) {
   .cards {
     grid-template-columns: 1fr;
@@ -57,7 +62,6 @@
   min-width: 150px;
   margin: 10px 30px 10px 10px;
   background-color: #1B1C1E;
-
 }
 
 .left-category-card img {
@@ -69,9 +73,7 @@
 .right-category-card {
   font-size: 20px;
   color: white;
-
   font-family: 'Red Hat Display';
-
   min-width: 700px;
   margin: 10px 300px 10px -25px;
   background-color: #1B1C1E;
