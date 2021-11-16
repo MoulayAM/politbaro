@@ -1,6 +1,7 @@
 class SurveysController < ApplicationController
   def index
     @surveys = Survey.all
+    @vote = Vote.new
   end
 
   def create
