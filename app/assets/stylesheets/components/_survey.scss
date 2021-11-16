@@ -27,29 +27,42 @@
 
 }
 
-.btn-flat-survey {
+.btn-flat-surveye {
   color: white;
   padding: 8px 15px;
   border-radius: 4px;
-  background: #FD6262;
-  transition: background 0.3s ease;
-  margin: 10px;
-  margin-top: 28%;
+ transition: background 0.3s ease;
+ margin-top: 20%;
 }
 
-.btn-flat-survey:hover {
+.btn-flat-surveye:hover {
+  background: rgb(144, 255, 179);
+  color: white;
+}
+
+.btn-flat-surveys {
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+ transition: background 0.3s ease;
+ margin-left: 120px;
+ margin-top: -47%;
+}
+
+.btn-flat-surveys:hover {
   background: rgb(255, 170, 170);
   color: white;
 }
 
+
 .percent {
   color: rgb(14, 186, 14);
-  margin-left: 10%;
+  margin-left: 2%;
+  margin-top: -15%;
 }
 
 .percents {
   color: rgb(255, 43, 43);
-  display: flex;
   margin-left: 60%;
   margin-top: -14%;
 }

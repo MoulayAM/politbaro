@@ -103,7 +103,7 @@ puts "done creating news"
 user_1 = User.create!(email:'wagon@gmail.com',password:'123456')
 
 survey_1 = Survey.create!(question:'Immigration: Morocco using migration as a bargaining chip with the EU')
-survey_2 = Survey.create!(question:'Immigration: Morocco using migration as a bargaining chip with the EU')
+survey_2 = Survey.create!(question:'Morocco-Israel relations: Morocco to establish full diplomatic and trade relations with Israel')
 survey_3 = Survey.create!(question:'Vaccine Pass: Authorities adopt obligatory COVID-19 vaccine pass in all public places')
 survey_4 = Survey.create!(question:'Moroccan Sahara: Morocco affirms Moroccanness of Western Sahara is non-negotiable')
 survey_5 = Survey.create!(question:'Legalization of Cannabis: Government to legalize cannabis for medical
