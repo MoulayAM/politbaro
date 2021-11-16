@@ -27,17 +27,17 @@
 <div class=“category-cards”>
 
   <% @popular_politicians.each do |politician|  %>
+    <%= link_to politician_path(politician.id) do %>
+      <div class="category-card">
+        <div class="left-category-card">
+          <img src="<%= politician.img_url %>"/>
+        </div>
 
-    <div class="category-card">
-      <div class="left-category-card">
-      <img src="<%= politician.img_url %>"/>
+        <div class="right-category-card">
+          <h1><%= politician.name %></h1>
+          <p><%= politician.bio.truncate(174).capitalize %></p>
+        </div>
       </div>
-
-      <div class="right-category-card">
-        <h1><%= politician.name %></h1>
-        <p><%= politician.bio.truncate(174).capitalize %></p>
-
-      </div>
-    </div>
+    <% end %>
   <% end %>
 </div>
