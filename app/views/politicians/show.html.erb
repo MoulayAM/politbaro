@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="col-sm-4">
-      <%= cl_image_tag @politician.photo.key, height: 300, width: 400, crop: :fill %>
+      <%= cl_image_tag @politician.photo.key, height: 300, width: 400, crop: :fill, gravity: :face %>
       <h1><%=  @politician.name %></h1>
       <div class="popularity">
         <p> <strong> Popularity Level  </strong> : <%= @politician.moyenne %> </p>
