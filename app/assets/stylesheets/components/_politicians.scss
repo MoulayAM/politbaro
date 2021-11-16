@@ -7,14 +7,12 @@
   border-radius: 8px;
   position: relative;
 
-  .politician-name{
-    position: absolute;
-    top: 10px;
-    height: 76px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .politician-name-index{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
     color: #8295DD;
+    padding-top: 48px;
 
     &:hover {
       text-decoration: none;
@@ -30,7 +28,7 @@
   }
 }
 
-.popularity {
+.popularity-index {
   position: relative;
   bottom: 20px;
   padding-top: 16px;
@@ -116,4 +114,8 @@ span {
 
 .main-containers {
   height:calc(100vh - 260px);
+}
+
+.politician-img{
+  margin: 32px 0;
 }
