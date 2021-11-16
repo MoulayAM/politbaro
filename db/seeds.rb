@@ -69,6 +69,79 @@ opinion_3 = Opinion.create!(politician: politician_3, theme: theme_3,content: "N
 opinion_4 = Opinion.create!(politician: politician_3, theme: theme_4,content: "Nabila Mounib : Le Maroc n’a pas besoin d’aide pour accomplir son intégrité territoriale...", opinion_url: 'https://telquel.ma/2020/12/10/nabila-mounib-le-maroc-na-pas-besoin-daide-pour-accomplir-son-integrite-territoriale_1704432')
 opinion_5 = Opinion.create!(politician: politician_3, theme: theme_5,content: "N/A", opinion_url: 'N/A')
 
+opinion_1 = Opinion.create!(politician: politician_4, theme: theme_1, content: "Abdelilah Benkirane : << nos jeunes ont toutes les opportunités requises dans leur pays >>", opinion_url: 'https://maroc-diplomatique.net/apres-avoir-condamne-les-actes-de-violence-benkirane-reclame-des-excuses-de-la-part-des-francais/')
+opinion_2 = Opinion.create!(politician: politician_4, theme: theme_2,content: "Abdelilah Benkirane : << le vaccin est une protection pour soi et pour les autres >>", opinion_url: 'https://fr.le360.ma/societe/le-covid-19-sintroduit-chez-abdelilah-benkirane-225621')
+opinion_3 = Opinion.create!(politician: politician_4, theme: theme_3,content: "Abdelilah Benkirane : << la souveraineté du Maroc sue son sahara date de plusieurs années et est indiscutable >>", opinion_url: 'https://journals.openedition.org/anneemaghreb/1267?lang=en')
+opinion_4 = Opinion.create!(politician: politician_4, theme: theme_4,content: "M. Benkirane a, en outre, signalé qu’en dehors des critiques de certains médias, tous ceux qui, comme par exemple le Mouvement unicité et réforme (MUR), le bras prosélyte du PJD, ne voient pas d’un bon oeil que le Maroc prenne langue avec Tel-Aviv ont pu s’exprimer à leur guise", opinion_url: 'https://www.maroc-hebdo.press.ma/normalisation-israel-benkirane')
+opinion_5 = Opinion.create!(politician: politician_4, theme: theme_5,content: "A quelques jours de son examen par le Conseil du gouvernement, le projet de loi sur la légalisation du Cannabis provoque des divisions au sein de la majorité gouvernementale, dont l’ancien Premier ministre et ex secrétaire général du PJD, Abdelilah Benkirane, laisse planer la menace de démission en cas de vote favorable de cette loi.", opinion_url: 'https://www.lopinion.ma/Legalisation-du-Cannabis-Une-bombe-a-retardement-au-sein-de-la-majorite_a12226.html')
+
+opinion_1 = Opinion.create!(politician: politician_5, theme: theme_1, content: "N/A", opinion_url: 'N/A')
+opinion_2 = Opinion.create!(politician: politician_5, theme: theme_2,content: "Abdellatif Ouahbi : << le pass vaccinal doit entrer en vigueur pour encourager les citoyens à l'avoir >>", opinion_url: 'https://www.medias24.com/2021/11/11/abdellatif-ouahbi-un-ministre-de-la-justice-sans-langue-de-bois/')
+opinion_3 = Opinion.create!(politician: politician_5, theme: theme_3,content: "Abdellatif Ouahbi, a affirmé, mardi à Dakhla, que son département veillera à défendre politiquement et juridiquement la justesse de la cause nationale du Sahara marocain", opinion_url: 'https://fr.hespress.com/232785-abdellatif-ouahbi-le-ministere-de-la-justice-se-battra-pour-defendre-la-justesse-de-la-cause-du-sahara-marocain.html')
+opinion_4 = Opinion.create!(politician: politician_5, theme: theme_4,content: "Me Ouahbi affirme que le rétablissement des relations Maroc – Israël « profitera plutôt aux Palestiniens »", opinion_url: 'https://www.pam.ma/fr/index.php/2021/01/18/video-me-ouahbi-affirme-que-le-retablissement-des-relations-maroc-israel-profitera-plutot-aux-palestiniens/')
+opinion_5 = Opinion.create!(politician: politician_5, theme: theme_5,content: "N/A", opinion_url: 'N/A')
+
+opinion_1 = Opinion.create!(politician: politician_6, theme: theme_1, content: "N/A", opinion_url: 'N/A')
+opinion_2 = Opinion.create!(politician: politician_6, theme: theme_2,content: "N/A", opinion_url: 'N/A')
+opinion_3 = Opinion.create!(politician: politician_6, theme: theme_3,content: "N/A", opinion_url: 'N/A')
+opinion_4 = Opinion.create!(politician: politician_6, theme: theme_4,content: "FZM : << l’importance du rétablissement des relations de notre pays avec Israël eu égard aux avantages qu’il présente au bénéfice des citoyens juifs marocains >>", opinion_url: 'https://article19.ma/accueil/archives/140590')
+opinion_5 = Opinion.create!(politician: politician_6, theme: theme_5,content: "N/A", opinion_url: 'N/A')
+
+opinion_1 = Opinion.create!(politician: politician_7, theme: theme_1, content: "La lutte contre l'immigration clandestine nécessite 'une coopération collective', affirme Nasser Bourita", opinion_url: 'https://m.le360.ma/politique/video-la-lutte-contre-limmigration-clandestine-necessite-une-cooperation-collective-affirme-nasser-241264')
+opinion_2 = Opinion.create!(politician: politician_7, theme: theme_2,content: "Nasser Bourita : 'La remise en cause du vaccin Sinopharm relève plus du domaine politique que scientifique'", opinion_url: 'https://www.lopinion.ma/Nasser-Bourita-La-remise-en-cause-du-vaccin-Sinopharm-releve-plus-du-domaine-politique-que-scientifique_a17341.html')
+opinion_3 = Opinion.create!(politician: politician_7, theme: theme_3,content: "Nasser Bourita : « L’Algérie fait de la question du Sahara sa première cause nationale »", opinion_url: 'https://www.lopinion.ma/Nasser-Bourita-L-Algerie-fait-de-la-question-du-Sahara-sa-premiere-cause-nationale_a11473.html')
+opinion_4 = Opinion.create!(politician: politician_7, theme: theme_4,content: "Nasser Bourita : «La normalisation des relations avec Israël a suscité un nouvel espoir et ouvert la voie à un élan sans précédent»", opinion_url: 'https://www.challenge.ma/nasser-bourita-ministre-des-affaires-etrangeres-la-normalisation-des-relations-avec-israel-a-suscite-un-nouvel-espoir-et-ouvert-la-voie-a-un-elan-sans-precedent-221190/')
+opinion_5 = Opinion.create!(politician: politician_7, theme: theme_5,content: "N/A", opinion_url: 'N/A')
+
+opinion_1 = Opinion.create!(politician: politician_8, theme: theme_1, content: "Dans ce même esprit, les services sécuritaires ont poursuivi la mise en œuvre des approches et plans d'action adoptés, que ce soit dans la lutte contre la criminalité et le renforcement du sentiment de sécurité que dans la lutte contre l'immigration clandestine, a ajouté M. Laftit", opinion_url: 'https://www.lopinion.ma/Le-ministere-de-l-Interieur-expose-les-efforts-du-Maroc-en-matiere-de-lutte-contre-le-terrorisme_a20402.html')
+opinion_2 = Opinion.create!(politician: politician_8, theme: theme_2,content: "N/A", opinion_url: 'N/A')
+opinion_3 = Opinion.create!(politician: politician_8, theme: theme_3,content: "Le ministre de l’Intérieur, Abdelouafi Laftit, aurait fait barrière à l’octroi de ce statut, et ce, du fait que le Royaume reprocherait aux fondations en question une certaine «ingérence dans les affaires intérieures»", opinion_url: 'https://telquel.ma/2021/04/29/abdelouafi-laftit-sur-la-legalisation-du-cannabis-nous-navons-plus-de-temps-a-perdre_1720410#:~:text=Le%20ministre%20a%20expliqu%C3%A9%20que,une%20r%C3%A9gion%20de%20la%20d%C3%A9perdition.')
+opinion_4 = Opinion.create!(politician: politician_8, theme: theme_4,content: "N/A", opinion_url: 'N/A')
+opinion_5 = Opinion.create!(politician: politician_8, theme: theme_5,content: "Le ministre a expliqué que le développement des usages licites du cannabis revêt une portée économique urgente, puisqu’il vise à sauver toute une région de la déperdition. ", opinion_url: 'N/A')
+
+opinion_1 = Opinion.create!(politician: politician_9, theme: theme_1, content: "N/A", opinion_url: 'N/A')
+opinion_2 = Opinion.create!(politician: politician_9, theme: theme_2,content: "N/A", opinion_url: 'N/A')
+opinion_3 = Opinion.create!(politician: politician_9, theme: theme_3,content: "N/A", opinion_url: 'N/A')
+opinion_4 = Opinion.create!(politician: politician_9, theme: theme_4,content: "N/A", opinion_url: 'N/A')
+opinion_5 = Opinion.create!(politician: politician_9, theme: theme_5,content: "N/A", opinion_url: 'N/A')
+
+opinion_1 = Opinion.create!(politician: politician_10, theme: theme_1, content: "N/A", opinion_url: 'N/A')
+opinion_2 = Opinion.create!(politician: politician_10, theme: theme_2,content: "N/A", opinion_url: 'N/A')
+opinion_3 = Opinion.create!(politician: politician_10, theme: theme_3,content: "N/A", opinion_url: 'N/A')
+opinion_4 = Opinion.create!(politician: politician_10, theme: theme_4,content: "N/A", opinion_url: 'N/A')
+opinion_5 = Opinion.create!(politician: politician_10, theme: theme_5,content: "N/A", opinion_url: 'N/A')
+
+opinion_1 = Opinion.create!(politician: politician_11, theme: theme_1, content: "N/A", opinion_url: 'N/A')
+opinion_2 = Opinion.create!(politician: politician_11, theme: theme_2,content: "Pass vaccinal : Ait Taleb se justifie au Parlement, les députés déplorent le timing de la décision", opinion_url: 'https://www.lopinion.ma/Pass-vaccinal-Ait-Taleb-se-justifie-au-Parlement-les-deputes-deplorent-le-timing-de-la-decision_a20066.html')
+opinion_3 = Opinion.create!(politician: politician_11, theme: theme_3,content: "N/A", opinion_url: 'N/A')
+opinion_4 = Opinion.create!(politician: politician_11, theme: theme_4,content: "N/A", opinion_url: 'N/A')
+opinion_5 = Opinion.create!(politician: politician_11, theme: theme_5,content: "N/A", opinion_url: 'N/A')
+
+opinion_1 = Opinion.create!(politician: politician_12, theme: theme_1, content: "N/A", opinion_url: 'N/A')
+opinion_2 = Opinion.create!(politician: politician_12, theme: theme_2,content: "N/A", opinion_url: 'N/A')
+opinion_3 = Opinion.create!(politician: politician_12, theme: theme_3,content: "N/A", opinion_url: 'N/A')
+opinion_4 = Opinion.create!(politician: politician_12, theme: theme_4,content: "AZIZ RABBAH: «J'IRAI EN ISRAËL EN TANT QUE REPRÉSENTANT DE L’ETAT ET JE PRENDRAI MES RESPONSABILITÉS»", opinion_url: 'https://fr.le360.ma/politique/video-aziz-rabbah-jirai-en-israel-en-tant-que-representant-de-letat-et-je-prendrai-mes-232835')
+opinion_5 = Opinion.create!(politician: politician_12, theme: theme_5,content: "N/A", opinion_url: 'N/A')
+
+opinion_1 = Opinion.create!(politician: politician_13, theme: theme_1, content: "Driss Lachgar : « avec beaucoup d’amertume, le comportement inhumain des forces d’occupation contre les migrants, en violation flagrante des droits de l’homme et des obligations de l’Etat espagnol au niveau européen concernant le dossier de l’immigration »", opinion_url: 'https://www.menara.ma/fr/article/lusfp-appelle-madrid-a-la-clarte-et-la-responsabilite-politique-et-morale')
+opinion_2 = Opinion.create!(politician: politician_13, theme: theme_2,content: "Driss Lachgar révèle le fond de sa pensée. Il témoigne de la position des militants de son parti quant aux relations Maroc-Israël et dénonce la posture «hypocrite» de certains islamistes.", opinion_url: 'https://fr.le360.ma/politique/video-maroc-israel-position-des-islamistes-elections-2021-les-revelations-de-driss-lachgar-229715')
+opinion_3 = Opinion.create!(politician: politician_13, theme: theme_3,content: "DRISS LACHGAR DÉNONCE LES PROVOCATIONS DE L'ALGÉRIE EN RECEVANT UNE DÉLÉGATION USFPÉISTE INSTALLÉE EN ESPAGNE", opinion_url: 'https://fr.le360.ma/politique/video-driss-lachgar-denonce-les-provocations-de-lalgerie-en-recevant-une-delegation-usfpeiste-228907')
+opinion_4 = Opinion.create!(politician: politician_13, theme: theme_4,content: " Driss Lachgar révèle le fond de sa pensée. Il témoigne de la position des militants de son parti quant aux relations Maroc-Israël et dénonce la posture «hypocrite» de certains islamistes.", opinion_url: 'https://fr.le360.ma/politique/video-maroc-israel-position-des-islamistes-elections-2021-les-revelations-de-driss-lachgar-229715')
+opinion_5 = Opinion.create!(politician: politician_13, theme: theme_5,content: "N/A", opinion_url: 'N/A')
+
+opinion_1 = Opinion.create!(politician: politician_14, theme: theme_1, content: "N/A", opinion_url: 'N/A')
+opinion_2 = Opinion.create!(politician: politician_14, theme: theme_2,content: "EL OTHMANI MET EN GARDE CONTRE UNE TROISIÈME VAGUE", opinion_url: 'https://fr.le360.ma/politique/covid-19-el-othmani-met-en-garde-contre-une-troisieme-vague-235975')
+opinion_3 = Opinion.create!(politician: politician_14, theme: theme_3,content: "SAÂD-EDDINE EL OTHMANI: 'L'ESPAGNE DOIT CESSER SON DOUBLE-JEU SUR L'INTÉGRITÉ TERRITORIALE DU MAROC'", opinion_url: 'https://fr.le360.ma/politique/saad-eddine-el-othmani-lespagne-doit-cesser-son-double-jeu-sur-lintegrite-territoriale-du-maroc-238975')
+opinion_4 = Opinion.create!(politician: politician_14, theme: theme_4,content: "M. El Othmani a, on le sait, une position personnelle opposée à toute forme de normalisation avec Israël", opinion_url: 'https://m.le360.ma/politique/normalisation-avec-israel-el-othmani-a-parle-au-nom-de-son-parti-et-non-du-gouvernement-221908')
+opinion_5 = Opinion.create!(politician: politician_14, theme: theme_5,content: "N/A", opinion_url: 'N/A')
+
+opinion_1 = Opinion.create!(politician: politician_15, theme: theme_1, content: "N/A", opinion_url: 'N/A')
+opinion_2 = Opinion.create!(politician: politician_15, theme: theme_2,content: "N/A", opinion_url: 'N/A')
+opinion_3 = Opinion.create!(politician: politician_15, theme: theme_3,content: "Nabil Benabdallah, a souligné que la décision unilatérale du régime algérien de rompre les relations diplomatiques avec le Royaume est 'une décision arbitraire et incompréhensible'", opinion_url: 'https://m.le360.ma/politique/maroc-algerie-les-partis-politiques-marocains-deplorent-la-decision-inappropriee-dalger-244590')
+opinion_4 = Opinion.create!(politician: politician_15, theme: theme_4,content: "Nabil Benabdellah : “Les accords avec Israël ne constituent que l’affirmation d’une réalité existante”", opinion_url: 'https://telquel.ma/2020/12/11/nabil-benabdellah-les-accords-ouverts-avec-israel-ne-constituent-finalement-que-laffirmation-dune-realite-existante_1704515')
+opinion_5 = Opinion.create!(politician: politician_15, theme: theme_5,content: " « Contexte de la légalisation de la culture et de l'industrialisation du cannabis au Maroc à la lumière du projet de loi 13.21 ». Présidé et introduite par le Secrétaire général du Parti, Mohamed Nabil Benabdallah", opinion_url: 'https://www.maghress.com/fr/albayane/211548')
+
+
 puts "done creating opinion"
 
 
