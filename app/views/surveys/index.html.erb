@@ -15,6 +15,7 @@
          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="<%= survey.positive_votes %>" aria-valuemin="0" aria-valuemax="<%= survey.positive_votes %>%" style="width: <%= survey.positive_votes %>%"></div>
          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="<%= survey.negative_votes %>" aria-valuemin="0" aria-valuemax="<%= survey.negative_votes %>%" style="width: <%= survey.negative_votes %>%"></div>
         </div>
+        <p class="voters"><%= survey.total_votes %> Moroccans voted!</p>
         <% else %>
       <%= simple_form_for @vote do |f| %>
        <%= f.input :agreed,  as: :hidden, input_html: { value: true } %>
@@ -27,7 +28,6 @@
         <%= f.button :submit, class:"btn btn-flat-surveys btn-danger", value:'AGAINST', disabled: survey.voted?(current_user.id) %>
       <% end %>
       <% end %>
-      <p class="voters"><%= survey.total_votes %> Moroccans voted!</p>
      </div>
 </div>
   <br/>
