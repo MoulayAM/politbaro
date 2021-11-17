@@ -18,3 +18,11 @@
   border-top: #FD6262;
   justify-content: center;
 }
+
+#closePopup{
+  text-decoration: none;
+  color: #aaaaaa;
+  &:hover{
+    cursor: pointer;
+  };
+}
