@@ -32,14 +32,11 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-
-  const initModal = () => {
-    $('#exampleModal').modal('show')
-    $('#closePopup').click(()=> {
-      $('#exampleModal').modal('hide')
+  if ($('#voteModal') != null ){
+    document.querySelector('#closePopup').addEventListener('click', () => {
+      $('#voteModal').modal('hide')
     })
+    setTimeout(() => { $('#voteModal').modal('show'); }, 10000);
   }
 
-  if ($('#exampleModal') != null )
-    setTimeout(initModal, 15000);
 });
