@@ -8,6 +8,7 @@ class CommentsController < ApplicationController
         if @comment.save
             redirect_to politician_news_index_path(@politician)
         else
+            #puts @comment.save.errors.full_messages
             render 'news/index'
         end 
     end
