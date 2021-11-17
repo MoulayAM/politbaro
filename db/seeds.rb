@@ -1,4 +1,5 @@
 require "open-uri"
+require 'faker'
 
 Opinion.destroy_all
 Theme.destroy_all
@@ -180,8 +181,6 @@ news_31 = News.create!(news_url: "https://www.lopinion.ma/Nabila-Mounib-au-Parle
 
 puts "done creating news"
 
-user_1 = User.create!(email:'wagon@gmail.com',password:'123456')
-
 survey_1 = Survey.create!(question:'Immigration: Morocco using migration as a bargaining chip with the EU')
 survey_2 = Survey.create!(question:'Morocco-Israel relations: Morocco to establish full diplomatic and trade relations with Israel')
 survey_3 = Survey.create!(question:'Vaccine Pass: Authorities adopt obligatory COVID-19 vaccine pass in all public places')
@@ -189,7 +188,15 @@ survey_4 = Survey.create!(question:'Moroccan Sahara: Morocco affirms Moroccannes
 survey_5 = Survey.create!(question:'Legalization of Cannabis: Government to legalize cannabis for medical
 and industrial')
 
-vote_1 = Vote.create!(user:user_1,survey:survey_1,agreed:true)
-vote_2 = Vote.create!(user:user_1,survey:survey_2,agreed:true)
+400.times do
+  user = User.create!(email: Faker::Internet.email, password: Faker::Internet.password(min_length: 6))
+  Vote.create!(user:user,survey:survey_1,agreed: [true,false].sample)
+  Vote.create!(user:user,survey:survey_2,agreed: [true,false].sample)
+  Vote.create!(user:user,survey:survey_3,agreed: [true,false].sample)
+  Vote.create!(user:user,survey:survey_4,agreed: [true,false].sample)
+  Vote.create!(user:user,survey:survey_5,agreed: [true,false].sample)
+end
+user_1 = User.create!(email:'wagon@gmail.com',password:'123456')
+
 
 puts "Finished seeding content"
