@@ -24,18 +24,23 @@
       <div class="row">
         <div class="col-sm-6 offset-sm-3">
           <%= simple_form_for [@politician, @comment], remote: true do |f| %>
-           <div class="font-italic"> 
+            
               <%= f.input :content %>
               <div class="submit">
               <%= f.submit class: 'btn btn-primary' %>
-              </div>
+              
             </div>
           <% end %>
         </div>
-        <div class="col-sm-8 offset-sm-2">
-          <% @comments.each do |c| %>
-            <br/> <%= c.content %>
-          <% end %>
+        <div class="col-sm-6 offset-sm-3">
+        <div class="container-comment">
+          
+            <ul class="list-group list-group-flush">
+              <% @comments.each do |c| %>
+              <br/>  <li class="list-group-item">  <%= c.content %></li>
+              <% end %>
+            </ul>
+          </div>
         </div>
   </div>
 </div>
