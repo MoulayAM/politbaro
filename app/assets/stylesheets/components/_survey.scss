@@ -58,11 +58,33 @@
 .percent {
   color: rgb(14, 186, 14);
   margin-left: 4%;
-  margin-top: -15%;
+  margin-top: 17%;
 }
 
 .percents {
   color: rgb(255, 43, 43);
   margin-left: 60%;
   margin-top: -14%;
+  margin-bottom: -37%;
+}
+
+.progresss {
+  margin-top: 40%;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0.75rem;
+  border-radius: 2px;
+}
+
+.voters {
+    margin-top: 7%;
+    font-size: 20px;
+    line-height: 1.4;
+    opacity: .7;
+    font-family: 'Red Hat Display';
+    margin-bottom: 0;
+    padding: 12px 0 6px 18px;
+    color: white;
 }

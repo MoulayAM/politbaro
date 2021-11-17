@@ -8,6 +8,14 @@
       <p class="survey"><%= survey.question %></p>
   </div>
     <div class="left-category-cardes col-sm-4">
+      <% if survey.voted?(current_user.id) %>
+        <h5 class="percent"><%= survey.positive_votes %>%</h5>
+        <h5 class="percents"><%= survey.negative_votes %>%</h5>
+        <div class="progresss">
+         <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="<%= survey.positive_votes %>" aria-valuemin="0" aria-valuemax="<%= survey.positive_votes %>%" style="width: <%= survey.positive_votes %>%"></div>
+         <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="<%= survey.negative_votes %>" aria-valuemin="0" aria-valuemax="<%= survey.negative_votes %>%" style="width: <%= survey.negative_votes %>%"></div>
+        </div>
+        <% else %>
       <%= simple_form_for @vote do |f| %>
        <%= f.input :agreed,  as: :hidden, input_html: { value: true } %>
        <%= f.input :survey_id,  as: :hidden, input_html: { value: survey.id } %>
@@ -18,8 +26,8 @@
         <%= f.input :survey_id,  as: :hidden, input_html: { value: survey.id } %>
         <%= f.button :submit, class:"btn btn-flat-surveys btn-danger", value:'AGAINST', disabled: survey.voted?(current_user.id) %>
       <% end %>
-      <h5 class="percent"><%= survey.positive_votes %>%</h5>
-      <h5 class="percents"><%= survey.negative_votes %>%</h5>
+      <% end %>
+      <p class="voters"><%= survey.total_votes %> Moroccans voted!</p>
      </div>
 </div>
   <br/>
