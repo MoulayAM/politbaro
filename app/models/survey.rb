@@ -17,4 +17,8 @@ class Survey < ApplicationRecord
     negative_votes = Vote.where(survey_id: id).where(agreed: false).count
     total_votes != 0 ? negative_votes * 100 / total_votes : 0
   end
+
+  def total_votes
+    Vote.where(survey_id: id).count
+  end
 end
