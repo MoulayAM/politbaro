@@ -3,9 +3,20 @@
     color: white;
     padding: 20px;
     .btn-primary {
-        background-color: chocolate;
+        color: white;
+        border: 5px solid black;
+        padding: 8px 24px;
+        border-radius: 50px;
+        margin: 10px 10px 10px -15px;
+        background: #FD6262;
+        transition: opacity 0.3s ease;
+        
     }
 }
+.input-comment {
+    border-radius: 6px;
+}
+
 .container-comment {
     color: black;
    

@@ -24,12 +24,8 @@
       <div class="row">
         <div class="col-sm-6 offset-sm-3">
           <%= simple_form_for [@politician, @comment], remote: true do |f| %>
-            
-              <%= f.input :content %>
-              <div class="submit">
+              <%= f.input :content, input_html: { class: 'input-comment' } %>
               <%= f.submit class: 'btn btn-primary' %>
-              
-            </div>
           <% end %>
         </div>
         <div class="col-sm-6 offset-sm-3">
