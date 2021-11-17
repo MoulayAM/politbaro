@@ -4,10 +4,6 @@
       <div class="col-sm-8 bio-container">
         <h2><strong>BIO </strong></h2>
         <p> <%= @politician.bio %> </p>
-        <div class="d-flex justify-content-center r4">
-          <%= link_to "News", politician_news_index_path(@politician), class:"btn btn-ghostt" %>
-          <%= link_to "Opinions", politician_opinions_path(@politician), class:"btn btn-ghostt" %>
-        </div>
       </div>
       <div class="col-sm-4">
         <div class="d-flex flex-column justify-content-center align-items-center">
@@ -26,6 +22,13 @@
           </div>
         </div>
       </div>
+      <div class="col-sm-8">
+        <div class="d-flex justify-content-center">
+          <%= link_to "News", politician_news_index_path(@politician), class:"btn btn-ghostt" %>
+          <%= link_to "Opinions", politician_opinions_path(@politician), class:"btn btn-ghostt" %>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
