@@ -7,7 +7,7 @@
   <div class="left-category-card col-sm-12">
       <p class="survey"><%= survey.question %></p>
   </div>
-    <div class="left-category-cardes col-sm-4">
+    <div class="left-category-cardess col-sm-4">
       <% if survey.voted?(current_user.id) %>
         <h5 class="percent"><%= survey.positive_votes %>%</h5>
         <h5 class="percents"><%= survey.negative_votes %>%</h5>
