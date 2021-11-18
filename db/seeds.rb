@@ -188,14 +188,31 @@ survey_4 = Survey.create!(question:'Moroccan Sahara: Morocco affirms Moroccannes
 survey_5 = Survey.create!(question:'Legalization of Cannabis: Government to legalize cannabis for medical
 and industrial')
 
-400.times do
+87.times do
   user = User.create!(email: Faker::Internet.email, password: Faker::Internet.password(min_length: 6))
   Vote.create!(user:user,survey:survey_1,agreed: [true,false].sample)
+end
+
+127.times do
+  user = User.create!(email: Faker::Internet.email, password: Faker::Internet.password(min_length: 6))
   Vote.create!(user:user,survey:survey_2,agreed: [true,false].sample)
+end
+
+98.times do
+  user = User.create!(email: Faker::Internet.email, password: Faker::Internet.password(min_length: 6))
   Vote.create!(user:user,survey:survey_3,agreed: [true,false].sample)
+end
+
+111.times do
+  user = User.create!(email: Faker::Internet.email, password: Faker::Internet.password(min_length: 6))
   Vote.create!(user:user,survey:survey_4,agreed: [true,false].sample)
+end
+
+164.times do
+  user = User.create!(email: Faker::Internet.email, password: Faker::Internet.password(min_length: 6))
   Vote.create!(user:user,survey:survey_5,agreed: [true,false].sample)
 end
+
 user_1 = User.create!(email:'wagon@gmail.com',password:'123456')
 
 
