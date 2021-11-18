@@ -97,3 +97,65 @@ a:active { text-decoration: none; }
   font-weight: bold;
   color:#889CE7;
 }
+
+.mission-left {
+  width: 45%;
+  height: 600px;
+  border: 1px solid white;
+  opacity: 0.9;
+  div {
+    margin: 16px;
+    height: 100%;
+    width: 100%;
+    h1{
+      font-family: 'Red Hat Display';
+      font-size: 32px !important;
+      text-align: center;
+      width: 90%;
+      height: 250px;
+      padding-top: 100px;
+      padding-left: 40px;
+      padding-right: 20px;
+
+    }
+    p{
+      font-size: 20px !important;
+      font-family: 'Red Hat Display';
+      text-align: center;
+      height: 80px;
+      width: 90%;
+      color: #a4a4a5;
+      padding-left: 40px;
+      padding-right: 20px;
+    }
+  }
+}
+
+.mission-right {
+  border: 1px solid white;
+  opacity: 0.9;
+  width: 55%;
+  height: 600px;
+  color: #888888;
+  position: relative;
+  .card-element{
+    position: absolute;
+    width: 240px;
+    height: 320px;
+    padding: 4px 16px;
+    border-radius: 8px;
+    background-color: #1b1c1e;
+    h4{
+      color: #8295DD;
+      padding-top: 8px;
+    }
+    p{
+      font-size: 16px !important;
+      width: 100%;
+      color: #a4a4a5
+    }
+    hr{
+      border: 4px solid #444;
+    }
+  }
+}
