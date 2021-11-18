@@ -27,8 +27,7 @@
         <%= f.input :survey_id,  as: :hidden, input_html: { value: survey.id } %>
         <%= f.button :submit, class:"btn btn-flat-surveys btn-danger", value:'AGAINST', disabled: survey.voted?(current_user.id) %>
       <% end %>
-      <% end %>
-     </div>
+      <% end %>     </div>
 </div>
   <br/>
 <% end %>
