@@ -36,7 +36,7 @@ document.addEventListener('turbolinks:load', () => {
     document.querySelector('#closePopup').addEventListener('click', () => {
       $('#voteModal').modal('hide')
     })
-    setTimeout(() => { $('#voteModal').modal('show'); }, 10000);
+    setTimeout(() => { $('#voteModal').modal('show'); }, 15000);
   }
 
 });
