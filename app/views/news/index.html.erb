@@ -26,7 +26,7 @@
             <%= simple_form_for [@politician, @comment], remote: true do |f| %>
                 <div class="input-co">
                 Laisser un commentaire
-                <%= f.input :content, input_html: { class: 'input-comment' } %>
+                <%= f.input :content, label: false, input_html: { class: 'input-comment' } %>
                 </div>
                 <%= f.submit class: 'btn btn-primary' %>
             <% end %>
@@ -37,7 +37,12 @@
             <ul class="list-group list-group-flush">
               <% @comments.each do |c| %>
               <br/>  <li class="list-group-item">  <%= c.content %></li>
+                <%= simple_form_for [@politician, c], method: :delete do |f| %>
+                  <%= f.submit "supprimer", class: 'btn btn-primary' %>
+                <% end %>
               <% end %>
+
+      
             </ul>
           </div>
         </div>

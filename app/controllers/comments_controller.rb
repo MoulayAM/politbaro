@@ -17,6 +17,11 @@ class CommentsController < ApplicationController
         end
     end
 
+    def destroy
+        comment = Comment.destroy(params[:id])
+        redirect_to politician_news_index_path(params[:politician_id])
+    end
+
     private
 
     def comment_params
