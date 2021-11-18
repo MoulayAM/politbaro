@@ -5,7 +5,7 @@ class NewsController < ApplicationController
         @politician = Politician.find(params[:politician_id])
         
         @comment = Comment.new
-        @comments = Comment.all
+        @comments = Comment.where(politician_id: params[:politician_id])
         
     end
 

@@ -8,26 +8,29 @@
       <div class="row justify-content-center">
           <div class="col-12 col-lg-6">
             <h1>News : <%= @politician.name %></h1>
-            <div  class="img-thumbnail">
-            <ul>
-              <% @news.each do |news| %>
-                  <li><%= news.title %></li>
-                  <h2><%= link_to 'Go to the article ...', news.news_url %></h2>
-              <% end %>
-            </ul>
-            </div>
+              <div  class="img-thumbnail">
+                <ul>
+                  <% @news.each do |news| %>
+                      <li><%= news.title %></li>
+                      <h2><%= link_to 'Read full article...', news.news_url %></h2>
+                  <% end %>
+                </ul>
+              </div>
           </div>
       </div>  
   </div>
 </div>
   <div class="container">
       <div class="row">
-        <div class="col-sm-6 offset-sm-3">
-          <%= simple_form_for [@politician, @comment], remote: true do |f| %>
-              <%= f.input :content, input_html: { class: 'input-comment' } %>
-              <%= f.submit class: 'btn btn-primary' %>
-          <% end %>
-        </div>
+          <div class="col-sm-6 offset-sm-3">
+            <%= simple_form_for [@politician, @comment], remote: true do |f| %>
+                <div class="input-co">
+                Laisser un commentaire
+                <%= f.input :content, input_html: { class: 'input-comment' } %>
+                </div>
+                <%= f.submit class: 'btn btn-primary' %>
+            <% end %>
+          </div>
         <div class="col-sm-6 offset-sm-3">
         <div class="container-comment">
           
